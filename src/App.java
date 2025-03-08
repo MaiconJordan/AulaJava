@@ -25,6 +25,12 @@ public class App {
 
 
         System.out.println(pessoas);
+        System.out.println("-----------------------------------");
+
+        System.out.println("Lista de pessoas:");
+        for (Pessoa pessoa : pessoas) {
+            System.err.println(pessoa);
+        }
 
 
 
