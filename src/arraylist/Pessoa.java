@@ -1,9 +1,20 @@
+package arraylist;
 public class Pessoa {
     
     String nome = this.nome;
     int idade = this.idade;
 
+    
 
+
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    
+    public Pessoa() {
+    }
     public String getNome() {
         return nome;
     }
