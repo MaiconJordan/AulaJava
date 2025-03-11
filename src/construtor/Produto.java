@@ -8,7 +8,7 @@ public class Produto {
 
     
     public Produto(){
-        
+
     }
 
     public Produto(String nome, Double preco, int quandidade) {
@@ -40,7 +40,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return  nome + " | Preço: " + preco + " | Quantidade: " + quandidade + " | " ;
+        return  nome + " | Preço: " + preco + " | Quantidade: " + quandidade  ;
     }
 
 

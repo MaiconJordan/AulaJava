@@ -24,6 +24,10 @@ public class App {
 
         Produto produto3 = new Produto("Leite", 4.5 , 20 );
 
+        ProdutoPerecivel perecivel = new ProdutoPerecivel("Carne", 35.00, 5, "2024-03-01");
+
+        System.out.println(perecivel);
+
         prod.add(produto1);
         prod.add(produto2);
         prod.add(produto3);
