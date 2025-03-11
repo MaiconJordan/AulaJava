@@ -1,8 +1,8 @@
 package arraylist;
 public class Pessoa {
     
-    String nome = this.nome;
-    int idade = this.idade;
+    private String nome;
+    private int idade ;
 
     
 
