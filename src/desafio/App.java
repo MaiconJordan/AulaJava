@@ -1,33 +1,46 @@
 package desafio;
 
+import java.util.Collections;
 import java.util.Scanner;
 
 public class App {
     
     public static void main(String[] args) {
+  Scanner leitura = new Scanner(System.in);
+        System.out.println("Digite o limite do cartão: ");
+        double limite = leitura.nextDouble();
+        Cartao cartao = new Cartao(limite);
 
-        Scanner sc  = new Scanner(System.in);        
-        int entrada = 1;
+        int sair = 1;
+        while(sair != 0) {
+            System.out.println("Digite a descrição da compra:");
+            String descricao = leitura.next();
 
-        Compra compra = new Compra(); 
+            System.out.println("Digite o valor da compra:");
+            double valor = leitura.nextDouble();
 
-        List<String> 
+            Compra compra = new Compra(descricao, valor);
+            boolean compraRealizada = cartao.lancaCompra(compra);
 
-
-
-        while (entrada == 1 ) {
-            System.out.println("Digite o Limite do Cartão:");
-            compra.setSaldo(sc.nextDouble());
-
-
-            
-
-
-
+            if (compraRealizada) {
+                System.out.println("Compra realizada!");
+                System.out.println("Digite 0 para sair ou 1 para continuar");
+                sair = leitura.nextInt();
+            } else {
+                System.out.println("Saldo insuficiente!");
+                sair = 0;
+            }
         }
 
-        sc.close();
+        System.out.println("***********************");
+        System.out.println("COMPRAS REALIZADAS:\n");
+        Collections.sort(cartao.getCompras());
+        for (Compra c : cartao.getCompras()) {
+            System.out.println(c.getProduto() + " - " +c.getValor());
+        }
+        System.out.println("\n***********************");
 
+        System.out.println("\nSaldo do cartão: " +cartao.getSaldo());
 
 
     }

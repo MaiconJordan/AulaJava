@@ -1,6 +1,6 @@
 package desafio;
 
-public class Compra {
+public class Compra implements Comparable<Compra>{
     
     private String produto;
     private double valor;
@@ -27,10 +27,10 @@ public class Compra {
         return "Compra [produto=" + produto + ", valor=" + valor + "]";
     }
 
-    
-    
-    
-
+    @Override
+    public int compareTo(Compra outraCompra){
+        return Double.compare(this.valor, outraCompra.valor);
+    }
     
 
 }
