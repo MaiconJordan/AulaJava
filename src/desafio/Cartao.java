@@ -9,7 +9,6 @@ public class Cartao {
     private double saldo;
     private List<Compra> compras;
 
-
     public Cartao(double limite) {
         this.limite = limite;
         this.saldo = limite;
