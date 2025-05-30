@@ -1,10 +1,10 @@
-package heranca;
+package entities;
 
 public class Account {
 
     private Integer number;
     private String holder;
-    private Double balance;
+    protected Double balance;
 
     public Account(Integer number, String holder, Double balance) {
         this.number = number;
