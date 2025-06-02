@@ -48,7 +48,7 @@ public class Order {
         }
         return sum;
     }
-    
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -70,6 +70,5 @@ public class Order {
         return sb.toString();
     }       
 
-
-   
+       
 }

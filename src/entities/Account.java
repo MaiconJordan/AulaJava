@@ -37,6 +37,7 @@ public class Account {
     public void withdraw(Double amount) {
         balance -= amount + 5.0; // Deducting a fee of 5.0 for withdrawal
     }
+    
     @Override
     public String toString() {
         return "Account{" +
