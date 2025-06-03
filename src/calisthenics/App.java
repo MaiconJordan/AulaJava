@@ -6,6 +6,8 @@ public class App {
         Cpf cpf = new Cpf("123.456.789-00");
         Cliente cliente = new Cliente(nome, cpf);
 
+      
+
         cliente.exibirDados();
     }
 }
