@@ -12,15 +12,15 @@ public class exe01 {
         System.out.println("Digite o valor do carro: ");
         double valorCarro = scanner.nextDouble();
 
-        System.out.println("Digite o valor da parcela: ");
-        double valorParcela = scanner.nextDouble();
+        System.out.println("Digite o numero de parcelas: ");
+        int nParcelas = scanner.nextInt();
 
-        Double nParcelas = valorCarro / valorParcela;
+        Double vlParcelas = valorCarro / nParcelas;
 
-        if(valorParcela < 1000){
+        if(vlParcelas < 1000){
             System.out.println("Valor da parcela deve ser maior que 1000.");
         } else {
-            System.out.println("Seu carro pode ser parcelado em: " + nParcelas + " parcelas de R$" + valorParcela);
+            System.out.println("Seu carro pode ser parcelado em: " + nParcelas + " parcelas de R$" + vlParcelas);
         }
 
 
