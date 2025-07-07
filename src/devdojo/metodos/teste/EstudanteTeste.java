@@ -12,9 +12,16 @@ public class EstudanteTeste {
         estudante01.idade = 15;
         estudante01.sexo = 'M';
 
+        Estudante estuddante02 = new Estudante();
+        estuddante02.nome = "Sakura";
+        estuddante02.idade = 14;
+        estuddante02.sexo = 'F';
+
+
         ImprimeEstudante impressora = new ImprimeEstudante();
         impressora.impressora(estudante01);
-        
+        impressora.impressora(estuddante02);
+
 
 
     }
