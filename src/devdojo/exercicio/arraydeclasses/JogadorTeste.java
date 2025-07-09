@@ -4,14 +4,23 @@ public class JogadorTeste {
 
     public static void main(String[] args) {
         
-        Jogador romario = new Jogador("Romario", 10);
+        Jogador arraxca = new Jogador("Arraxca", 10);
+        Time time = new Time("Flamengo");
         Jogador cristiano = new Jogador("Cristiano", 7);
-        Jogador neymar = new Jogador("Neyma", 11);
+        Jogador neymar = new Jogador("Neymar", 11);
 
-        Jogador[] jogadores = {romario, cristiano, neymar};
+        
+
+        arraxca.setTime(time);
+
+        arraxca.imprime();
+       
+
+
+        Jogador[] jogadores = {arraxca, cristiano, neymar};
 
         for (Jogador jogador : jogadores) {
-            System.out.println(jogador.getNome() + " " + jogador.getNumero());
+            System.out.println(jogador.getTime());
         }
 
 
