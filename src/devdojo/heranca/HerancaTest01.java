@@ -16,6 +16,7 @@ public class HerancaTest01 {
         funcionario01.setSalario(20000);
 
         System.out.println(funcionario01);
+        funcionario01.relatorio();
 
     }
 

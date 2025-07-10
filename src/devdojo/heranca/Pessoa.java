@@ -2,11 +2,11 @@ package devdojo.heranca;
 
 public class Pessoa {
 
-    private String nome;
-    private String cpf;
-    private Endereco Endereco;
+    protected String nome;
+    protected String cpf;
+    protected Endereco Endereco;
 
-    
+
     public String getNome() {
         return nome;
     }
