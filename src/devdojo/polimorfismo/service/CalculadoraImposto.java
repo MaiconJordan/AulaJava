@@ -1,8 +1,8 @@
 package devdojo.polimorfismo.service;
 
-import devdojo.polimorfismo.Computador;
 import devdojo.polimorfismo.Produto;
 import devdojo.polimorfismo.Tomate;
+
 
 public class CalculadoraImposto {
 
@@ -12,6 +12,13 @@ public class CalculadoraImposto {
         double imposto = produto.calcularImposto();
         System.out.println("Valor " + produto.getValor());
         System.out.println("Imposto a ser pago " + imposto);
+
+        if( produto instanceof Tomate) {
+            Tomate tomate = (Tomate) produto;
+            System.out.println("Data de validade do tomate: " + tomate.getDataValidade());
+        }
+        
+
     }
 
 }
