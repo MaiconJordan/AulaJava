@@ -17,6 +17,7 @@ public class TotalGasto {
             
 
             gastos += vl;
+            //gasots
         }
 
         System.out.println(gastos);
